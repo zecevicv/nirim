@@ -54,7 +54,6 @@ if (document.querySelector('.media-box .swiper')) {
   ======================================================= */
 if (document.querySelector('.graduates .swiper')) {
   new Swiper(".graduates .swiper", {
-      
       pagination: {
         el: ".graduates .swiper-pagination",
         clickable: true,
@@ -104,5 +103,28 @@ if (document.querySelector('.running-logos .swiper')) {
         slidesPerView: 9,
       }
     }
+  });
+}
+
+/* #About Section 2 Slider
+  ======================================================= */
+if (document.querySelector('.about-section-2 .swiper')) {
+  new Swiper(".about-section-2 .swiper", {
+      pagination: {
+        el: ".about-section-2 .swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".about-section-2 .next",
+        prevEl: ".about-section-2 .prev",
+      },
+      breakpoints: {
+        0: {
+          slidesPerView: 1.15,
+        },
+        1024: {
+          slidesPerView: 3,
+        }
+      }
   });
 }
