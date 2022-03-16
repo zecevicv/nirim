@@ -80,6 +80,16 @@ body {
   box-shadow: 0 15px 25px rgba(0, 0, 0, .06);
 }
 
+.link {
+  display: inline-flex;
+  border-bottom: 1px solid #1A3167;
+}
+
+.link img {
+  width: .6vw;
+  margin-right: .6vw;
+}
+
 @media (max-width: 1023.98px) {
   .btn {
     height: 10.93vw;
@@ -96,6 +106,11 @@ body {
 
   .btn-quintary {
     border-bottom-right-radius: 0;
+  }
+
+  .link img {
+    width: 2vw;
+    margin-right: 2vw;
   }
 }
 
@@ -441,6 +456,9 @@ body {
 
 .media-box .text {
   flex: 0 0 26.45%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 .media-box h2 {
@@ -454,6 +472,10 @@ body {
 
 .media-box p {
   margin-bottom: 1.5vw;
+}
+
+.media-box .link {
+  margin-bottom: 2vw;
 }
 
 .media-box .swiper {
@@ -521,6 +543,10 @@ body {
   .media-box p {
     margin-bottom: 10vw;
     line-height: 1.33;
+  }
+
+  .media-box .link {
+    margin-bottom: 9.33vw;
   }
   
   .media-box .swiper {
@@ -1629,5 +1655,154 @@ body {
   
   .team .text-center .btn {
     margin-top: 10.66vw;
+  }
+}
+
+/* #Graduates
+================================================== */
+.graduates-page .banner p {
+  margin: 0 auto;
+  width: 24.5vw;
+}
+
+@media (max-width: 1023.98px) {
+  .graduates-page .banner p {
+    width: 66.65vw;
+  }
+}
+
+/* #Graduates Banner
+================================================== */
+.graduates-banner {
+  position: relative;
+  margin-top: 2.5vw;
+}
+
+.graduates-banner .img img,
+.graduates-banner .img picture {
+  width: 100%;
+}
+
+.graduates-banner .text {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: 40%;
+  text-align: center;
+  z-index: 1;
+}
+
+.graduates-banner .text h2 {
+  line-height: 1.2;
+  margin-bottom: .6vw;
+}
+
+.graduates-banner .text p {
+  line-height: 1.43;
+  margin-bottom: 1vw;
+}
+
+.graduates-banner .text > a {
+  display: inline-flex;
+  margin: 0 auto;
+  border-bottom: 1px solid #1A3167;
+}
+
+.graduates-banner .text > a img {
+  width: .6vw;
+  margin-right: .6vw;
+}
+
+.graduates-banner .btns {
+  margin-top: 2vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.graduates-banner .btns .btn:first-child {
+  margin-left: 1.3vw;
+}
+
+@media (max-width: 1023.98px) {
+  .graduates-banner {
+    margin-top: 2vw;
+  }
+
+  .graduates-banner .text {
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+  }
+  
+  .graduates-banner .text h2 {
+    text-align: center;
+    margin-bottom: 1.33vw;
+  }
+  
+  .graduates-banner .text p {
+    line-height: 1.33;
+    margin-top: 0;
+    margin-bottom: 5.33vw;
+  }
+  
+  .graduates-banner .text > a img {
+    width: 2vw;
+    margin-right: 2vw;
+  }
+
+  .graduates-banner .btns {
+    margin-top: 11.73vw;
+    flex-direction: column;
+  }
+  
+  .graduates-banner .btns .btn:first-child {
+    margin-left: 0;
+    margin-bottom: 3.6vw;
+  }
+}
+
+/* #Graduates Page Graduates
+================================================== */
+.graduates-page .graduates .swiper-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.graduates-page .graduates .swiper-slide {
+  margin-bottom: 1vw;
+  flex: 0 0 33.333333%;
+}
+
+@media (max-width: 1023.98px) {
+  .graduates-page .graduates .swiper-wrapper {
+    display: block;
+  }
+
+  .graduates-page .graduates .swiper-slide {
+    margin-bottom: 2.66vw;
+  }
+
+  .graduates-page .graduates .swiper-slide .text {
+    right: 50%;
+    transform: translateX(50%);
+  }
+}
+
+/* #Graduates Page Media Boxes
+================================================== */
+@media (min-width: 1024px) {
+  .graduates-page .media-box {
+    align-items: flex-start;
+  }
+
+  .graduates-page .media-box:not(:last-child) {
+    margin-bottom: 3.125vw;
+  }
+
+  .graduates-page .media-box .text {
+    padding-top: 3vw;
   }
 }

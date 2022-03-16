@@ -53,7 +53,8 @@ if (document.querySelector('.media-box .swiper')) {
 /* #Graduates
   ======================================================= */
 if (document.querySelector('.graduates .swiper')) {
-  new Swiper(".graduates .swiper", {
+  if (!document.querySelector('.graduates-page')) {
+    new Swiper(".graduates .swiper", {
       pagination: {
         el: ".graduates .swiper-pagination",
         clickable: true,
@@ -76,7 +77,9 @@ if (document.querySelector('.graduates .swiper')) {
           },
         }
       }
-  });
+    });
+  }
+
 }
 
 /* #Logos
@@ -110,21 +113,21 @@ if (document.querySelector('.running-logos .swiper')) {
   ======================================================= */
 if (document.querySelector('.about-section-2 .swiper')) {
   new Swiper(".about-section-2 .swiper", {
-      pagination: {
-        el: ".about-section-2 .swiper-pagination",
-        clickable: true,
+    pagination: {
+      el: ".about-section-2 .swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".about-section-2 .next",
+      prevEl: ".about-section-2 .prev",
+    },
+    breakpoints: {
+      0: {
+        slidesPerView: 1.15,
       },
-      navigation: {
-        nextEl: ".about-section-2 .next",
-        prevEl: ".about-section-2 .prev",
-      },
-      breakpoints: {
-        0: {
-          slidesPerView: 1.15,
-        },
-        1024: {
-          slidesPerView: 3,
-        }
+      1024: {
+        slidesPerView: 3,
       }
+    }
   });
 }
