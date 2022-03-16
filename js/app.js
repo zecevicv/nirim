@@ -79,7 +79,6 @@ if (document.querySelector('.graduates .swiper')) {
       }
     });
   }
-
 }
 
 /* #Logos
@@ -128,6 +127,25 @@ if (document.querySelector('.about-section-2 .swiper')) {
       1024: {
         slidesPerView: 3,
       }
+    }
+  });
+}
+
+/* #Popup Video Iframe
+  ======================================================= */
+function stopIframeVideo (iframe) {
+  const url = iframe.getAttribute('src');
+  iframe.setAttribute('src', '');
+  iframe.setAttribute('src', url);
+}
+
+const videoPopup = document.querySelector('.video-popup');
+const videoPopupIframe = document.querySelector('.video-popup iframe');
+
+if (videoPopup) {
+  videoPopup.addEventListener('click', (e) => {
+    if (e.target.closest('.popup-close') || !e.target.closest('.video')) {
+      stopIframeVideo(videoPopupIframe);
     }
   });
 }
