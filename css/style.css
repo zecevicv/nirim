@@ -346,6 +346,10 @@ body {
   width: 24.5vw;
 }
 
+.commercial-page .banner .text {
+  width: 31.25vw;
+}
+
 .banner h1 {
   line-height: 1.14;
   margin-bottom: 1.2vw;
@@ -396,6 +400,10 @@ body {
   }
 
   .transparency-page .banner .text {
+    width: 72.6vw;
+  }
+
+  .commercial-page .banner .text {
     width: 72.6vw;
   }
   
@@ -1975,5 +1983,148 @@ body {
   
   .transparency .cards .text p {
     margin: 2vw 0;
+  }
+}
+
+/* #Commercial
+================================================== */
+.commercial {
+  padding: 1.5vw 0 4.85vw 0;
+  margin-bottom: 4vw;
+  background-image: url('../img/global/media-boxes-bg.jpg');
+  background-size: 100% auto;
+}
+
+.commercial .heading {
+  text-align: center;
+  margin: 0 auto;
+  width: 39vw;
+}
+
+.commercial .sliders {
+  margin: 3.125vw 0 2.86vw 0;
+}
+
+.commercial .slider {
+  position: relative;
+  overflow: hidden;
+}
+
+.commercial .slider:not(:last-child) {
+  margin-bottom: 3.9vw;
+}
+
+.commercial .swiper-wrap {
+  width: 87%;
+  margin: 0 auto;
+  margin-bottom: 1.5vw;
+}
+
+.commercial .swiper {
+  margin: 0 -1.25vw;
+}
+
+.commercial .label {
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translateX(10%);
+  z-index: 10;
+}
+
+.commercial .swiper-slide {
+  padding: 0 1.25vw;
+  position: relative;
+}
+
+.commercial .img img {
+  width: 100%;
+  height: 21.875vw;
+  object-fit: cover;
+  object-position: center;
+  border-top-left-radius: 2vw;
+  border-bottom-right-radius: 2vw;
+}
+
+.commercial .text {
+  color: white;
+  position: absolute;
+  bottom: 1.3vw;
+  right: 2vw;
+}
+
+.commercial .play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.commercial .play img {
+  width: 3.125vw;
+}
+
+@media (max-width: 1023.98px) {
+  .commercial {
+    padding: 2vw 0 14vw 0;
+    margin-bottom: 6vw;
+    background-image: none;
+  }
+
+  .commercial .heading {
+    width: 90%;
+  }
+
+  .commercial .heading p {
+    line-height: 1.33;
+  }
+  
+  .commercial .sliders {
+    margin: 5.33vw 0 12vw 0;
+  }
+
+  .commercial .slider {
+    padding-top: 19vw;
+  }
+  
+  .commercial .slider:not(:last-child) {
+    margin-bottom: 9.33vw;
+  }
+  
+  .commercial .swiper-wrap {
+    margin-bottom: 4.66vw;
+    width: 100%;
+  }
+  
+  .commercial .swiper {
+    width: 100%;
+    margin: 0;
+    padding-right: 2.66vw;
+  }
+  
+  .commercial .swiper-slide {
+    padding: 0 1.6vw;
+    position: relative;
+  }
+  
+  .commercial .img img {
+    height: 32vw;
+    border-top-left-radius: 4vw;
+    border-bottom-right-radius: 4vw;
+  }
+  
+  .commercial .text {
+    color: black;
+    position: static;
+    margin-top: 3.33vw;
+    line-height: 1.33;
+  }
+  
+  .commercial .play {
+    top: 16vw;
+  }
+  
+  .commercial .play img {
+    width: 8.4vw;
   }
 }
