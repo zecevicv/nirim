@@ -54,30 +54,51 @@ if (document.querySelector('.media-box .swiper')) {
   ======================================================= */
 if (document.querySelector('.graduates .swiper')) {
   if (!document.querySelector('.graduates-page')) {
-    new Swiper(".graduates .swiper", {
-      pagination: {
-        el: ".graduates .swiper-pagination",
-        clickable: true,
-      },
-      navigation: {
-        nextEl: ".graduates .next",
-        prevEl: ".graduates .prev",
-      },
-      breakpoints: {
-        0: {
-          slidesPerView: 1.5,
-          grid: {
-            rows: 1,
-          },
+    if (document.querySelector('.donates-page')) {
+      new Swiper(".graduates .swiper", {
+        pagination: {
+          el: ".graduates .swiper-pagination",
+          clickable: true,
         },
-        1024: {
-          slidesPerView: 3,
-          grid: {
-            rows: 2,
+        navigation: {
+          nextEl: ".graduates .next",
+          prevEl: ".graduates .prev",
+        },
+        breakpoints: {
+          0: {
+            slidesPerView: 1.5,
           },
+          1024: {
+            slidesPerView: 3,
+          }
         }
-      }
-    });
+      });
+    } else {
+      new Swiper(".graduates .swiper", {
+        pagination: {
+          el: ".graduates .swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".graduates .next",
+          prevEl: ".graduates .prev",
+        },
+        breakpoints: {
+          0: {
+            slidesPerView: 1.5,
+            grid: {
+              rows: 1,
+            },
+          },
+          1024: {
+            slidesPerView: 3,
+            grid: {
+              rows: 2,
+            },
+          }
+        }
+      });
+    }
   }
 }
 
