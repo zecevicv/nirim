@@ -342,6 +342,10 @@ body {
   width: 24.5vw;
 }
 
+.transparency-page .banner .text {
+  width: 24.5vw;
+}
+
 .banner h1 {
   line-height: 1.14;
   margin-bottom: 1.2vw;
@@ -388,6 +392,10 @@ body {
   }
 
   .about-page .banner .text {
+    width: 72.6vw;
+  }
+
+  .transparency-page .banner .text {
     width: 72.6vw;
   }
   
@@ -1862,5 +1870,110 @@ body {
   
   .video-popup .popup-close img {
     width: 7.34vw;
+  }
+}
+
+/* #Transparency
+================================================== */
+.transparency {
+  padding: 1.5vw 0 8.85vw 0;
+  text-align: center;
+}
+
+.transparency .container {
+  width: 87%;
+}
+
+.transparency .heading {
+  margin: 0 auto;
+  width: 39vw;
+}
+
+.transparency h2 {
+  margin-bottom: .5vw;
+}
+
+.transparency .cards {
+  margin: 3.125vw 0 4.16vw 0;
+}
+
+.transparency .cards ul {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -1.3vw -1.5vw;
+}
+
+.transparency .cards ul li {
+  flex: 0 0 33.333333%;
+  padding: 1.3vw 1.5vw;
+}
+
+.transparency .cards ul li > div {
+  box-shadow: 0 15px 25px rgba(0, 0, 0, .06);
+  padding: 4.16vw 2.2vw 2.6vw 2.2vw;
+  border-top-right-radius: 1.5vw;
+  border-bottom-left-radius: 1.5vw;
+}
+
+.transparency .cards img {
+  margin: 0 auto;
+  width: 3.43vw;
+  margin-bottom: .25vw;
+}
+
+.transparency .cards .text {
+  margin-top: 2vw;
+}
+
+.transparency .cards .text p {
+  margin: .78vw 0 1vw 0;
+}
+
+@media (max-width: 1023.98px) {
+  .transparency {
+    padding: 2vw 0 20vw 0;
+  }
+  
+  .transparency .heading {
+    width: 100%;
+  }
+  
+  .transparency h2 {
+    margin-bottom: .5vw;
+  }
+  
+  .transparency .cards {
+    margin: 6.65vw 0 13.33vw 0;
+  }
+  
+  .transparency .cards ul {
+    display: block;
+    margin: 0;
+  }
+  
+  .transparency .cards ul li {
+    padding: 0;
+  }
+
+  .transparency .cards ul li:not(:last-child) {
+    margin-bottom: 6.65vw;
+  }
+  
+  .transparency .cards ul li > div {
+    padding: 7.6vw 4.6vw 6.65vw 4.6vw;
+    border-radius: 4vw;
+  }
+  
+  .transparency .cards img {
+    width: 8.8vw;
+    margin-bottom: 1vw;
+  }
+  
+  .transparency .cards .text {
+    margin-top: 2.66vw;
+  }
+  
+  .transparency .cards .text p {
+    margin: 2vw 0;
   }
 }
