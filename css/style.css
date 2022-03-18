@@ -192,6 +192,11 @@ body {
   background-repeat: no-repeat;
   background-size: .67vw auto;
   font-weight: 100;
+  font-family: inherit;
+}
+
+.select-primary option {
+  font-weight: 100;
 }
 
 .select-secondary {
@@ -205,6 +210,11 @@ body {
   background-position: 0 50%;
   background-repeat: no-repeat;
   background-size: .67vw auto;
+  font-weight: 100;
+  font-family: inherit;
+}
+
+.select-secondary option {
   font-weight: 100;
 }
 
@@ -432,6 +442,10 @@ body {
   width: 31.25vw;
 }
 
+.contact-page .banner .text {
+  width: 31.25vw;
+}
+
 .donates-page .banner .text {
   width: 22.9vw;
 }
@@ -498,6 +512,10 @@ body {
   }
 
   .commercial-page .banner .text {
+    width: 72.6vw;
+  }
+
+  .contact-page .banner .text {
     width: 72.6vw;
   }
 
@@ -2594,5 +2612,204 @@ body {
   .volunteers .link {
     margin-top: 3.46vw;
     margin-bottom: 11.33vw;
+  }
+}
+
+/* #Map
+================================================== */
+.map #map {
+  width: 100%;
+  height: 40.10vw;
+  margin-top: -11.7vw;
+  margin-bottom: 7.8vw;
+}
+
+@media (max-width: 1023.98px) {
+  .map #map {
+    height: 102vw;
+    margin-top: -22vw;
+    margin-bottom: 23.6vw;
+  }
+}
+
+/* #Contact
+================================================== */
+.contact {
+  padding-top: 1.5vw;
+  background-image: url('../img/global/media-boxes-bg.jpg');
+  background-size: 100% auto;
+}
+
+/* Text */
+.contact .text {
+  display: flex;
+  margin: 0 auto;
+  width: 80%;
+  margin-bottom: 3.125vw;
+}
+
+.contact .text-wrap {
+  flex-grow: 1;
+}
+
+.contact .text h2 {
+  margin-bottom: .78vw;
+}
+
+.contact .text ul {
+  display: flex;
+  align-items: center;
+  margin: .78vw 0 2vw 0;
+  line-height: 1;
+}
+
+.contact .text ul li {
+  display: flex;
+  align-items: center;
+}
+
+.contact .text ul li:not(:last-child) {
+  padding-left: 1.3vw;
+  margin-left: 1.3vw;
+  border-left: 1px solid black;
+}
+
+.contact .text ul img {
+  width: .78vw;
+  height: .78vw;
+  object-fit: contain;
+  object-position: center;
+  margin-left: .5vw;
+}
+
+.contact .text .img {
+  flex: 0 0 46vw;
+}
+
+.contact .text .img img {
+  width: 100%;
+}
+
+/* Form */
+.contact .form {
+  margin: 0 auto;
+  width: 67%;
+  background-color: white;
+  border-top-right-radius: 1.5vw;
+  border-bottom-left-radius: 1.5vw;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, .06);
+  padding: 4.53vw 6.25vw;
+  position: relative;
+  z-index: 1;
+}
+
+.contact .form form {
+  margin: 2vw 0 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.contact .form form > input,
+.contact .form form > select {
+  flex: 0 0 100%;
+  margin-bottom: 1.5vw;
+}
+
+.contact .form form > input:nth-child(1),
+.contact .form form > input:nth-child(2),
+.contact .form form > input:nth-child(3),
+.contact .form form > input:nth-child(4),
+.contact .form form > input:nth-child(5),
+.contact .form form > input:nth-child(6) {
+  flex: 0 0 46%;
+}
+
+.contact .form .btn {
+  margin-top: 1.5vw;
+  margin-right: auto;
+}
+
+@media (max-width: 1023.98px) {
+  .contact {
+    padding-top: 4vw;
+    background-image: none;
+  }
+  
+  /* Text */
+  .contact .text {
+    display: block;
+    width: 92%;
+    margin-bottom: 14.66vw;
+  }
+  
+  .contact .text h2 {
+    margin-bottom: 4vw;
+    text-align: center;
+  }
+  
+  .contact .text ul {
+    display: flex;
+    align-items: center;
+    margin: 2.66vw 0 8vw 0;
+  }
+  
+  .contact .text ul li:not(:last-child) {
+    padding-left: 4vw;
+    margin-left: 4vw;
+  }
+  
+  .contact .text ul img {
+    width: 3.33vw;
+    height: 3.33vw;
+    margin-left: 2.66vw;
+  }
+  
+  .contact .text .img {
+    flex: 0 0 46vw;
+  }
+  
+  .contact .text .img img {
+    width: 100%;
+  }
+  
+  /* Form */
+  .contact .form {
+    width: 90%;
+    border-top-right-radius: 4vw;
+    border-bottom-left-radius: 4vw;
+    padding: 10vw 4.93vw 13.33vw 4.93vw;
+  }
+  
+  .contact .form form {
+    margin: 5.33vw 0 0 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .contact .form form > input,
+  .contact .form form > select {
+    margin-bottom: 7.33vw;
+  }
+  
+  .contact .form form > input:nth-child(1),
+  .contact .form form > input:nth-child(2),
+  .contact .form form > input:nth-child(3),
+  .contact .form form > input:nth-child(4),
+  .contact .form form > input:nth-child(5),
+  .contact .form form > input:nth-child(6) {
+    flex: 0 0 100%;
+  }
+  
+  .contact .form .btn {
+    margin-top: 4vw;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .contact .form form > select {
+    max-width: 100%;
+    padding-left: 8vw;
   }
 }
