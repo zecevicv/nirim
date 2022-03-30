@@ -54,7 +54,7 @@ if (document.querySelector('.media-box .swiper')) {
   ======================================================= */
 if (document.querySelector('.graduates .swiper')) {
   if (!document.querySelector('.graduates-page')) {
-    if (document.querySelector('.donates-page')) {
+    if (document.querySelector('.donates-page') || document.querySelector('.category-page')) {
       new Swiper(".graduates .swiper", {
         pagination: {
           el: ".graduates .swiper-pagination",
@@ -201,5 +201,60 @@ if (document.querySelector('.commercial .swiper')) {
       }
     });
   });
+}
 
+/* #Gallery
+  ======================================================= */
+if (document.querySelector('.gallery .swiper')) {
+  const slider = document.querySelector('.gallery .swiper');
+  const pagination = document.querySelector('.gallery .swiper-pagination');
+  const next = document.querySelector('.gallery .next');
+  const prev = document.querySelector('.gallery .prev');
+
+  new Swiper(slider, {
+    breakpoints: {
+      0: {
+        slidesPerView: 1.22
+      },
+      1024: {
+        slidesPerView: 2.23
+      }
+    },
+    pagination: {
+      el: pagination,
+    },
+    navigation: {
+      nextEl: next,
+      prevEl: prev,
+    },
+  });
+}
+
+/* #Track
+  ======================================================= */
+if (document.querySelector('.track .swiper')) {
+  const slider = document.querySelector('.track .swiper');
+  const pagination = document.querySelector('.track .swiper-pagination');
+  const next = document.querySelector('.track .next');
+  const prev = document.querySelector('.track .prev');
+
+  new Swiper(slider, {
+    centeredSlides: true,
+    loop: true,
+    breakpoints: {
+      0: {
+        slidesPerView: 1
+      },
+      1024: {
+        slidesPerView: 3
+      }
+    },
+    pagination: {
+      el: pagination,
+    },
+    navigation: {
+      nextEl: next,
+      prevEl: prev,
+    },
+  });
 }
