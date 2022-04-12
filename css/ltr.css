@@ -1,0 +1,467 @@
+/* #Btn
+================================================== */
+.btn img {
+  margin-right: 0;
+  margin-left: 1vw;
+  transform: rotate(180deg);
+}
+
+.link img {
+  margin-left: .6vw;
+  margin-right: 0;
+}
+
+@media (max-width: 1023.98px) {
+  .btn img {
+    margin-right: 0;
+    margin-left: 2.5vw;
+  }
+
+  .link img {
+    margin-right: 0;
+    margin-left: 2vw;
+  }
+}
+
+/* #Swiper Navigation
+================================================== */
+.swiper-navigation .next img,
+.swiper-navigation .prev img {
+  transform: rotate(180deg);
+}
+
+/* #Form Elements
+================================================== */
+.select-primary {
+  background-position: 100% 50%;
+}
+
+.select-secondary {
+  background-position: 100% 50%;
+}
+
+/* #Header
+================================================== */
+.header-links li:not(:last-child) {
+  margin-left: 0;
+  margin-right: 1.5vw;
+}
+
+@media (max-width: 1023.98px) {
+  .header-links li:not(:last-child) {
+    margin-left: 0;
+    margin-right: 1.5vw;
+  }
+}
+
+/* #Banner
+================================================== */
+.banner .btns .btn:first-child {
+  margin-left: 0;
+  margin-right: 1.3vw;
+}
+
+@media (max-width: 1023.98px) {
+  .banner .btns .btn:first-child {
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 3.6vw;
+  }
+}
+
+/* #Media Boxes
+================================================== */
+.media-box .img {
+  margin-left: 0;
+  margin-right: 7.8vw;
+}
+
+.media-box:nth-child(even) .img {
+  margin-left: 7.8vw;
+  margin-right: 0;
+}
+
+.media-box .img img {
+  border-top-left-radius: 0;
+  border-top-right-radius: 3.65vw;
+}
+
+.media-box:nth-child(even) .img img {
+  border-top-left-radius: 3.65vw;
+  border-top-right-radius: 0;
+}
+
+@media (max-width: 1023.98px) {
+  .media-box .img {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  
+  .media-box:nth-child(even) .img {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  
+  .media-box .img img {
+    border-top-left-radius: 0;
+    border-top-right-radius: 9.33vw;
+  }
+  
+  .media-box:nth-child(even) .img img {
+    border-top-left-radius: 0;
+    border-top-right-radius: 9.33vw;
+  }
+}
+
+/* #Media Boxes Alt
+================================================== */
+.media-boxes.alt .media-box .img {
+  margin-right: 7.8vw;
+  margin-left: 0;
+}
+
+.media-boxes.alt .media-box:nth-child(even) .img {
+  margin-left: 14.32vw;
+  margin-right: 0;
+}
+
+@media (max-width: 1023.98px) {
+  .media-boxes.alt .media-box .img {
+    margin: 0 5.33vw!important;
+    margin-bottom: 10vw!important;
+  }
+}
+
+/* #About Page Media Boxes
+================================================== */
+.about-page .media-boxes-2 .media-box h2 {
+  transform: translateX(0);
+}
+
+@media (max-width: 1023.98px) {
+  .about-page .media-boxes-2 .media-box h2 {
+    transform: none;
+  }
+}
+
+/* #Numbers
+================================================== */
+.numbers .text ul li:not(:last-child) {
+  margin-left: 0;
+  margin-right: 6.25vw;
+}
+
+@media (max-width: 1023.98px) {
+  .numbers .text {
+    text-align: left;
+  }
+  
+  .numbers .text ul li:not(:last-child) {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  
+  .numbers .text ul img {
+    margin-right: 2.66vw;
+    margin-left: 0;
+  }
+}
+
+/* #Graduates
+================================================== */
+.graduates .swiper-slide .text {
+  right: auto;
+  left: 8vw;
+  text-align: left;
+}
+
+.graduates .swiper-slide .row img {
+  margin-right: 1.15vw;
+  margin-left: 0;
+}
+
+@media (max-width: 1023.98px) {
+  .graduates .swiper-slide .text {
+    right: auto;
+    left: 2vw;
+  }
+  
+  .graduates .swiper-slide .row img {
+    margin-left: 0;
+    margin-right: 2vw;
+  }
+  
+  .graduates .swiper-slide h3 {
+    padding-right: 0;
+    padding-left: 10vw;
+  }
+}
+
+/* #Banner 2
+================================================== */
+.banner-2 .img img {
+  border-top-right-radius: 3.65vw;
+  border-bottom-left-radius: 3.65vw;
+}
+
+.banner-2 .text {
+  right: auto;
+  left: 9.375vw;
+}
+
+@media (max-width: 1023.98px) {
+  .banner-2 .img img {
+    border-top-right-radius: 9.33vw;
+    border-bottom-left-radius: 9.33vw;
+  }
+  
+  .banner-2 .text {
+    right: auto;
+    left: 6.4vw;
+  }
+}
+
+/* #Footer
+================================================== */
+.footer-contact li img {
+  margin-left: 0;
+  margin-right: 1vw;
+}
+
+@media (min-width: 1024px) {
+  .footer .collapsible:not(:last-child) {
+    margin-left: 0;
+    margin-right: 4vw;
+  }
+}
+
+@media (max-width: 1023.98px) {
+  .footer-contact li img {
+    margin-left: 0;
+    margin-right: 4.66vw;
+  }
+}
+
+/* #About Section 1
+================================================== */
+.about-section-1 .text > a img {
+  margin-right: 0;
+  margin-left: .6vw;
+}
+
+.about-section-1 .btns .btn:first-child {
+  margin-left: 0;
+  margin-right: 1.3vw;
+}
+
+@media (max-width: 1023.98px) {
+  .about-section-1 .text > a img {
+    margin-right: 0;
+    margin-left: 2vw;
+  }
+
+  .about-section-1 .btns .btn:first-child {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+/* #About Section 2
+================================================== */
+.about-section-2 .text a img {
+  margin-right: 0;
+  margin-left: .6vw;
+}
+
+@media (max-width: 1023.98px) {
+  .about-section-2 .heading {
+    text-align: left;
+  }
+
+  .about-section-2 .swiper {
+    padding-right: 0;
+    padding-left: 2.65vw;
+  }
+  
+  .about-section-2 .text a img {
+    margin-right: 0;
+    margin-left: 2vw;
+  }
+}
+
+/* #Team
+================================================== */
+.team .tab-btn:not(:last-child) {
+  margin-left: 0;
+  margin-right: 3.38vw;
+}
+
+@media (max-width: 1023.98px) {
+  .team .tab-btn:not(:last-child) {
+    margin-left: 0;
+    margin-right: 3.33vw;
+  }
+}
+
+/* #Graduates Banner
+================================================== */
+.graduates-banner .text > a img {
+  margin-right: 0;
+  margin-left: .6vw;
+}
+
+.graduates-banner .btns .btn:first-child {
+  margin-left: 0;
+  margin-right: 1.3vw;
+}
+
+@media (max-width: 1023.98px) {
+  .graduates-banner .text > a img {
+    margin-right: 0;
+    margin-left: 2vw;
+  }
+  
+  .graduates-banner .btns .btn:first-child {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+/* #Commercial
+================================================== */
+.commercial .label {
+  right: auto;
+  left: 0;
+  transform: translateX(-10%);
+}
+
+.commercial .text {
+  right: auto;
+  left: 2vw;
+}
+
+@media (max-width: 1023.98px) {
+  .commercial .swiper {
+    padding-right: 0;
+    padding-left: 2.66vw;
+  }
+}
+
+/* #Contact
+================================================== */
+.contact .text ul li:not(:last-child) {
+  padding-left: 0;
+  margin-left: 0;
+  padding-right: 1.3vw;
+  margin-right: 1.3vw;
+  border-left: none;
+  border-right: 1px solid black;
+}
+
+.contact .text ul img {
+  margin-left: 0;
+  margin-right: .5vw;
+}
+
+.contact .form .btn {
+  margin-right: 0;
+  margin-left: auto;
+}
+
+@media (max-width: 1023.98px) {
+  .contact .text ul li:not(:last-child) {
+    padding-left: 0;
+    margin-left: 0;
+    padding-right: 4vw;
+    margin-right: 4vw;
+  }
+  
+  .contact .text ul img {
+    margin-left: 0;
+    margin-right: 2.66vw;
+  }
+  
+  .contact .form .btn {
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .contact .form form > select {
+    padding-left: 0;
+    padding-right: 8vw;
+  }
+}
+
+/* #FAQ
+================================================== */
+.faq .collapse > div {
+  padding-left: 0;
+  padding-right: 6.77vw;
+}
+
+@media (max-width: 1023.98px) {
+  .faq .collapse-toggler .img {
+    margin-right: 0;
+    margin-left: 4vw;
+  }
+   
+  .faq .collapse > div {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+/* #Gallery
+================================================== */
+.gallery .text {
+  right: 0;
+  left: 2.58vw;
+}
+
+@media (min-width: 1024px) {
+  .gallery .swiper-slide:first-child {
+    padding-left: 0;
+  }
+}
+
+@media (max-width: 1023.98px) {
+  .gallery .swiper {
+    padding-right: 0;
+    padding-left: 3.33vw;
+  }
+  
+  .gallery .text {
+    right: auto;
+    left: 5.6vw;
+  }
+}
+
+/* #Track
+================================================== */
+.track .prev {
+  right: auto;
+  left: 31.5%;
+}
+
+.track .next {
+  left: auto;
+  right: 31.5%;
+}
+
+@media (max-width: 1023.98px) {
+  .track .heading {
+    text-align: left;
+    padding-right: 0;
+    padding-left: 6.5%;
+  }
+  
+  .track .prev {
+    right: auto;
+    left: 31.5%;
+  }
+  
+  .track .next {
+    left: auto;
+    right: 31.5%;
+  }
+}
