@@ -433,7 +433,10 @@ body {
   .header.show-menu .header-menu {
     opacity: 1;
     visibility: visible;
-    color: white;
+  }
+  
+  .header.show-menu .header-menu .header-links a {
+    color: white!important;
   }
   
   .header .header-menu .header-links ul {
