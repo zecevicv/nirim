@@ -351,6 +351,52 @@ body {
   width: 9vw;
 }
 
+@media (min-width: 1024px) {
+  .header .collapse-toggler {
+    display: flex;
+    align-items: center;
+  }
+
+  .header .collapse-toggler img {
+    width: 1vw;
+    margin-right: .5vw;
+    transition: transform .3s ease;
+  }
+
+  .header .collapsible.show .collapse-toggler img {
+    transform: rotate(180deg);
+  }
+
+  .header .collapsible {
+    position: relative;
+  }
+
+  .header .collapse {
+    position: absolute;
+    bottom: -.75vw;
+    right: -1vw;
+    height: auto !important;
+    transform: translateY(100%);
+    opacity: 0;
+    visibility: hidden;
+    background-color: white;
+    color: #242424;
+    padding: .75vw 1vw;
+    white-space: nowrap;
+    line-height: 2;
+    transition: opacity .4s ease, visibility .4s ease;
+  }
+
+  .header .collapse ul {
+    display: block;
+  }
+
+  .header .collapsible.show .collapse {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
 @media (max-width: 1023.98px) {
   .header {
     padding: 2.73vw 0;
@@ -402,6 +448,31 @@ body {
 
   .header .btn img {
     width: 3vw;
+  }
+
+  .header .header-menu .header-links .collapse ul li {
+    border-bottom: none;
+    padding: 0 0 2vw 0;
+  }
+
+  .header .collapse-toggler {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 2vw;
+  }
+
+  .header .collapse-toggler .simbol {
+    font-size: 4vw;
+  }
+
+  .header .collapse {
+    opacity: .7;
+  }
+
+  .header .collapse ul {
+    padding-top: 1vw;
+    padding-bottom: 0;
   }
 }
 
