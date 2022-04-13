@@ -1,6 +1,19 @@
 /* #Header
   ======================================================= */
 const header = document.querySelector('.header');
+const hamburgerBtn = document.querySelector('.header-hamburger');
+
+if (hamburgerBtn) {
+  hamburgerBtn.addEventListener('click', (e) => {
+    hamburgerBtn.classList.toggle('is-active');
+    header.classList.toggle('show-menu');
+    body.classList.toggle('no-scroll');
+
+    if (header.classList.contains('show-search')) {
+      header.classList.remove('show-search');
+    }
+  });
+}
 
 // Scroll
 window.addEventListener('scroll', () => {
