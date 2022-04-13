@@ -460,6 +460,10 @@ body {
   .header.show-menu .menu-close {
     opacity: 1;
   }
+
+  .header.show-menu .header-hamburger img:first-child {
+    opacity: 0;
+  }
   
   .header.show-menu .header-logo img:nth-child(2) {
     display: none;
